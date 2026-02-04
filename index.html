@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Be My Valentine 💖</title>
+  <title>Be My Valentine</title>
 
   <style>
     body {
@@ -45,21 +45,21 @@
 
 <body>
 
-  <h1 id="question">Will you be my Valentine? 💘</h1>
+  <h1 id="question">Will you be my Valentine?</h1>
 
   <div class="buttons">
-    <button id="yesBtn" onclick="yesClicked()">Yes 💖</button>
-    <button id="noBtn" onclick="noClicked()">No 😒</button>
+    <button id="yesBtn" onclick="yesClicked()">Yes</button>
+    <button id="noBtn" onclick="noClicked()">No</button>
   </div>
 
   <script>
     const messages = [
-      "Are you sure? 😳",
-      "I realllllyyyyy likeeee youuu 🥺",
-      "C’mon, give me another chance 🙏",
-      "PLEASEEEEE 💔",
-      "You’re breaking my heart 😭",
-      "Okay but like… think again 😌"
+      "Are you sure?",
+      "I realllllyyyyy likeeee youuu",
+      "Cmon, give me another chance",
+      "PLEASEEEEE",
+      "You are breaking my heart",
+      "Think again"
     ];
 
     let noCount = 0;
@@ -74,7 +74,7 @@
         question.innerText = messages[noCount];
         noCount++;
       } else {
-        question.innerText = "There is only one correct answer 😏";
+        question.innerText = "There is only one correct answer";
         noBtn.style.display = "none";
       }
 
@@ -85,16 +85,11 @@
     function yesClicked() {
       document.body.innerHTML = `
         <h1 style="color:#ff4d6d; font-size:3rem;">
-          YAYYYYY 💕🥰💖<br>
-          Happy Valentine’s Day, Carly!
+          Happy Valentines Day, Carly!
         </h1>
 
-        <p style="font-size:1.8rem; margin-top:20px;">
-          You are the best ever ❤️
-        </p>
-
-        <p style="font-size:1.4rem; margin-top:10px;">
-          I’m so lucky to have you 💕
+        <p style="font-size:1.8rem;">
+          You are the best ever.
         </p>
       `;
     }
